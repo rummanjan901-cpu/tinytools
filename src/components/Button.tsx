@@ -1,3 +1,4 @@
+// src/components/Button.tsx
 import React from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -30,7 +31,7 @@ export default function Button({
   return (
     <button
       className={`${baseStyle} ${variants[variant]} ${sizes[size]} ${className}`}
-      {props}
+      {...props}
     >
       {children}
     </button>
