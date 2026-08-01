@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import Header from "@/components/Header";
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col selection:bg-neutral-200 dark:selection:bg-neutral-800">
+      <body className="min-h-screen flex flex-col font-sans antialiased selection:bg-neutral-200 dark:selection:bg-neutral-800">
         <Providers>
           <Header />
           <main className="flex-grow max-w-6xl w-full mx-auto px-4 py-8 md:py-12">
